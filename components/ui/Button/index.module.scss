@@ -1,0 +1,43 @@
+
+@import "scss/index";
+
+    .link, .btn{
+
+        cursor: pointer;
+        outline: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+        text-transform: uppercase;
+        border-radius: 30px;
+        border: 0;
+        text-align: center;
+    }
+
+.sizeSmall{
+    padding: 16px 43px;
+}
+.sizeNormal{
+    padding: 25px 80px;
+    border-radius: 50px;
+    font-size: 24px;
+}
+.sizeLarge{
+    padding: 25px 130px;
+    border-radius: 50px;
+    font-size: 24px;
+}
+
+.fill{
+    background: #0071E3;
+}
+
+.variantOutlined{
+    border: 2px solid #fff;
+}

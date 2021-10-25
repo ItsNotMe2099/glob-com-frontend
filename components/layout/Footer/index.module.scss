@@ -1,0 +1,208 @@
+@import "scss/index";
+
+.default{
+  background-color: #212968;
+  position: relative;
+  z-index: 33;
+}
+
+.container{
+  width: 90%;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.root{
+  display: flex;
+  padding-left: 70px;
+  padding-right: 172px;
+  padding-top: 46px;
+  padding-bottom: 88px;
+  @media screen and (max-width: 1280px){
+    flex-direction: column;
+    padding-right: 70px;
+  }
+  @media screen and (max-width: 950px){
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media screen and (max-width: $sm-min){
+    padding-bottom: 19px;
+    padding-left: 43px;
+    padding-top: 35px;
+    padding-right: 50px;
+  }
+}
+
+.copyright{
+  font-size: 12px;
+  color: #454545;
+  padding: 28px 0;
+  text-align: center;
+  background-color: #171717;
+}
+
+.menu{
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  @media screen and (max-width: $sm-min){
+    flex-direction: column;
+  }
+}
+
+.title{
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.41em;
+  color: #000000;
+  text-align: center;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  svg{
+    margin-right: 13px;
+  }
+  @media screen and (max-width: 1280px){
+    justify-content: center;
+  }
+  @media screen and (max-width: 375px){
+    justify-content: flex-start;
+  }
+}
+
+.titleLogo{
+  font-size: 16px;
+  line-height: 107.4%;
+  color: #FFFFFF;
+}
+
+.moscow{
+  font-weight: 600;
+  font-size: 14.4259px;
+  line-height: 18px;
+  letter-spacing: 0.165em;
+  color: #000000;
+  text-align: center;
+}
+
+.desc{
+  font-size: 15px;
+  line-height: 20px;
+  color: #B9B9B9;
+  margin-top: 26px;
+  @media screen and (max-width: 1280px){
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: $sm-min){
+    padding: 0;
+  }
+  @media screen and (max-width: 375px){
+    justify-content: flex-start;
+  }
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 1280px){
+    margin-bottom: 20px;
+  }
+}
+
+.email{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  img{
+    margin-right: 15px;
+  }
+  @media screen and (max-width: 1280px){
+    justify-content: center;
+    padding-left: 0;
+  }
+  @media screen and (max-width: 375px){
+    justify-content: flex-start;
+  }
+}
+
+.phone{
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  img{
+    margin-right: 15px;
+  }
+}
+
+.text{
+  font-size: 14px;
+  font-weight: 500;
+  color: #b9b9b9;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.contacts{
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.textLoc{
+  font-size: 16px;
+  line-height: 19px;
+  color: #4D4D4D;
+  font-family: 'Roboto';
+}
+
+.icon{
+  margin-right: 20px;
+}
+
+.head{
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+
+.shop{
+  display: flex;
+  flex-direction: column;
+  .text{
+    margin-top: 16px;
+  }
+  @media screen and (max-width: $sm-min){
+    margin-top: 64px;
+  }
+}
+
+.right{
+  @media screen and (max-width: $sm-min){
+    margin-top: 70px;
+  }
+}
+
+.social{
+  margin-top: 16px;
+}
+
+.footer{
+  margin-top: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.subscribe{
+  margin-top: 16px;
+}

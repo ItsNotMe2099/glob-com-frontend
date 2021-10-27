@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3007",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -16,7 +16,9 @@
     "react-dom": "17.0.2",
     "react-dynamic-overflow": "^1.1.0",
     "react-input-mask": "^2.0.4",
-    "sass": "^1.43.2"
+    "react-slick": "^0.28.1",
+    "sass": "^1.43.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "17.0.30",

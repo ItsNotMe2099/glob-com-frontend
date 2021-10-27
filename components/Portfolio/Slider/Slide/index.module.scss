@@ -1,0 +1,38 @@
+@import "scss/index";
+
+.root{
+  display: flex;
+}
+
+.switches{
+  display: flex;
+  align-items: center;
+}
+
+.switchGreen{
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #67FF5A;
+  background: rgba(13, 74, 8, 0.3);
+}
+
+.switchPink{
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FF00EF;
+  background: rgba(105, 10, 99, 0.3);
+}
+
+.title{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+  margin-top: 35px;
+}

@@ -1,0 +1,111 @@
+@import "scss/index";
+
+.root{
+  position: relative;
+  background-size: contain;
+  margin-top: -5px;
+  z-index: 2;
+  @media screen and (max-width: 475px){
+    background-color: #020a1d;
+    background-size: contain;
+  }
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.waves{
+  background-color: #020a1d;
+  padding-top: 30px;
+  overflow: hidden;
+  img{
+    margin-bottom: -5px;
+  }
+  @media screen and (max-width: 475px){
+    img{
+      width: 475px;
+    }
+  }
+  @media screen and (max-width: 375px){
+    img{
+      width: 375px;
+    }
+  }
+  @media screen and (max-width: 320px){
+    img{
+      width: 320px;
+    }
+  }
+}
+
+.dots{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding: 0;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  :global .slick-active{
+    background: linear-gradient(82.24deg, #3F51B1 -64.39%, #5A55AE -41.99%, #7B5FAC -21.32%, #8F6AAE 1.08%, #A86AA4 21.76%, #CC6B8E 42.43%, #F18271 64.83%, #F3A469 85.5%, #F7C978 107.9%);
+      padding: 2px;
+      border-radius: 50%;
+      width: 15px !important;
+      height: 15px !important;
+    button{
+      width: 7px !important;
+      height: 7px !important;
+      background: #fff !important;
+      opacity: 1 !important;
+      &::before{
+        opacity: .75 !important;
+        color: black !important;
+      }
+    }
+  }
+  li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+
+    button{
+      width: 9px;
+      height: 9px;
+      background: linear-gradient(82.24deg, #3F51B1 -64.39%, #5A55AE -41.99%, #7B5FAC -21.32%, #8F6AAE 1.08%, #A86AA4 21.76%, #CC6B8E 42.43%, #F18271 64.83%, #F3A469 85.5%, #F7C978 107.9%);
+      border-radius: 50%;
+      opacity: 0.5;
+      border: none;
+      color: transparent;
+      text-indent: -9999px;
+      margin: 0;
+      padding: 0;
+      transition: width 0.1s, height 0.1s;
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      cursor: pointer;
+      outline: none;
+
+      &::before{
+        font-family: 'slick';
+        font-size: 6px;
+        line-height: 20px;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+      }
+    }
+  }
+}

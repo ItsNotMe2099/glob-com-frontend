@@ -4,6 +4,7 @@
     padding-top: 118px;
     padding-bottom: 147px;
     background: #24282C;
+    position: relative;
 }
 
 .container{
@@ -49,3 +50,48 @@
         }
     }
 }
+
+.clouds{
+    overflow: hidden;
+    img{
+      margin-bottom: -5px;
+    }
+    @media screen and (max-width: 475px){
+      img{
+        width: 475px;
+      }
+    }
+    @media screen and (max-width: 375px){
+      img{
+        width: 375px;
+      }
+    }
+    @media screen and (max-width: 320px){
+      img{
+        width: 320px;
+      }
+    }
+  }
+
+  .clouds2{
+    overflow: hidden;
+    margin-top: -122px;
+    img{
+      margin-bottom: -5px;
+    }
+    @media screen and (max-width: 475px){
+      img{
+        width: 475px;
+      }
+    }
+    @media screen and (max-width: 375px){
+      img{
+        width: 375px;
+      }
+    }
+    @media screen and (max-width: 320px){
+      img{
+        width: 320px;
+      }
+    }
+  }

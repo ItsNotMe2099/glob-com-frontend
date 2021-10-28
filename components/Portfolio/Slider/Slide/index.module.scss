@@ -3,7 +3,9 @@
 .root{
   display: flex;
   margin-top: 60px;
-  flex-direction: column-reverse;
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .container{

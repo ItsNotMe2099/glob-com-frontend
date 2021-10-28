@@ -5,15 +5,14 @@
   background-size: contain;
   margin-top: -5px;
   z-index: 2;
-  @media screen and (max-width: 475px){
-    background-color: #020a1d;
-    background-size: contain;
-  }
 }
 
 .container{
   width: 80%;
   margin: 0 auto;
+  @media (max-width: 1200px) {
+    width: 95%;
+}
 }
 
 .waves{

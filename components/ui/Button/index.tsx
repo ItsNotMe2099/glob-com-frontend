@@ -10,6 +10,7 @@ interface Props {
   href?: string
   target?: string
   className?: string
+  classNameRoot?: string
   type?: 'submit' | 'reset' | 'button'
   blank?: boolean
   image?: string
@@ -31,7 +32,7 @@ export default function Button(props: Props) {
     }
   }
   return (
-  <div className={cx({[styles.wrapper]: props.wrapper})}>
+  <div className={cx(props.classNameRoot, {[styles.wrapper]: props.wrapper})}>
   {props.href ? (
     <Link href={props.href}>
       <a

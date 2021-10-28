@@ -1,4 +1,5 @@
-import Arrow from 'components/svg/Arrow'
+import ArrowNext from 'components/svg/ArrowNext'
+import ArrowPrev from 'components/svg/ArrowPrev'
 import styles from './index.module.scss'
 
 interface Props {
@@ -18,7 +19,7 @@ export default function SliderControl(props: Props) {
 
   return (
     <div className={getClassName()} onClick={props.onClick}>
-      <Arrow/>
+      {props.direction === 'next' ? <ArrowNext/> : <ArrowPrev/>}
     </div>
   )
 }

@@ -1,16 +1,9 @@
 @import "scss/index";
 
 .next{
-  position: absolute;
-  right: -5%;
   cursor: pointer;
-  bottom: 55%;
 }
 
 .prev{
-  transform: rotate(180deg);
-  position: absolute;
-  left: -5%;
-  bottom: 55%;
   cursor: pointer;
 }

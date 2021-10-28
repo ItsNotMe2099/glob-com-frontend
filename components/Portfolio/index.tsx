@@ -1,3 +1,4 @@
+import Button from 'components/ui/Button'
 import styles from './index.module.scss'
 import PortfolioSlider from './Slider'
 
@@ -12,6 +13,12 @@ export default function Portfolio(props: Props) {
           PORTFOLIO OVERVIEW
         </div>
         <PortfolioSlider/>
+        <div className={styles.bottom}>
+          <div className={styles.title}>
+            WANT TO SEE MORE OUR PROJECTS?
+          </div>
+          <Button size='normal' color='fill' classNameRoot={styles.btn}>VIEW ALL PROJECTS</Button>
+        </div>
       </div>
     </div>
   )

@@ -1,0 +1,84 @@
+@import "scss/index";
+
+.root{
+  
+}
+
+.top{
+  padding-bottom: 31px;
+  border-bottom: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  img{
+    margin-right: 10px;
+  }
+}
+
+.title{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.text{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.separator{
+  margin-top: 32px;
+  img{
+    width: 100%;
+    @media screen and (max-width: 950px){
+      width: auto;
+    }
+  }
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  img{
+    margin-right: 13px;
+  }
+}
+
+.price{
+  margin-top: 33px;
+  margin-left: 31px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  span{
+    font-weight: bold;
+    margin-left: 5px;
+  }
+}
+
+.btn{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  button{
+    width: 100%;
+    @media screen and (max-width: 950px){
+      width: auto;
+    }
+  }
+}
+
+.off{
+  background: #055FBA;
+  border-radius: 30px;
+  padding: 4px 10px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-left: 10px;
+}

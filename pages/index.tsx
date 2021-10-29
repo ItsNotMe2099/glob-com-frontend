@@ -1,3 +1,4 @@
+import HowItWorks from 'components/HowItWorks'
 import Layout from 'components/layout/Layout'
 import Packages from 'components/Packages'
 import Portfolio from 'components/Portfolio'
@@ -12,6 +13,7 @@ export default function Home(props) {
         <Portfolio/>
         <Packages/>
         <Reviews/>
+        <HowItWorks/>
       </Layout>
   )
 }

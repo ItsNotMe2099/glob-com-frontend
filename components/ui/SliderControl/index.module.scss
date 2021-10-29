@@ -2,8 +2,41 @@
 
 .next{
   cursor: pointer;
+  right: -56px;
+  height: 52px;
+  @media screen and (max-width: 1200px){
+    right: -70px;
+  }
 }
 
 .prev{
   cursor: pointer;
+  left: -70px;
+  height: 52px;
+  @media screen and (max-width: 1400px){
+    left: -50px;
+  }
+  @media screen and (max-width: 1200px){
+    left: -70px;
+  }
+}
+
+.wrapper{
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: linear-gradient(180deg, #201e1e 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.light{
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.position{
+  position: absolute;
+  bottom: 0;
+  top: 50%;
 }

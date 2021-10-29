@@ -86,8 +86,10 @@
   align-items: center;
   margin-top: 35px;
   div{
+    div{
     &:first-of-type{
       margin-right: 28px;
     }
+  }
   }
 }

@@ -7,7 +7,7 @@ interface Props {}
 export default function Portfolio(props: Props) {
 
   return (
-    <>
+    <div style={{marginTop: '200px'}}>
     <div className={styles.clouds}>
         <img src='/img/Portfolio/clouds.svg' alt=''/>
       </div>
@@ -28,6 +28,6 @@ export default function Portfolio(props: Props) {
     <div className={styles.clouds2}>
       <img src='/img/Portfolio/clouds2.svg' alt=''/>
     </div>
-    </>
+    </div>
   )
 }

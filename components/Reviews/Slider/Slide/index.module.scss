@@ -1,0 +1,147 @@
+@import "scss/index";
+
+.root{
+  background: #FFFFFF;
+  box-shadow: 0px 67.9261px 54.3409px rgba(0, 0, 0, 0.07), 0px 28.3779px 22.7023px rgba(0, 0, 0, 0.0503198), 0px 15.1722px 12.1377px rgba(0, 0, 0, 0.0417275), 0px 8.5054px 6.80432px rgba(0, 0, 0, 0.035), 0px 4.51716px 3.61372px rgba(0, 0, 0, 0.0282725), 0px 1.87969px 1.50375px rgba(0, 0, 0, 0.0196802);
+  padding: 30px;
+  width: 512px;
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 1750px){
+    width: 400px;
+  }
+  @media screen and (max-width: 1400px){
+    width: 350px;
+  }
+  @media (max-width: 1210px) {
+    width: 512px;
+  }
+  @media (max-width: 1200px) {
+    margin: 0;
+  }
+  @media screen and (max-width: 670px){
+    width: 400px;
+  }
+  @media screen and (max-width: 550px){
+    width: 300px;
+  }
+}
+
+.tags{
+  display: flex;
+}
+
+.top{
+  margin-top: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site{
+  font-weight: 800;
+  font-size: 19.0193px;
+  line-height: 23px;
+  color: #0071E3;
+}
+
+.app{
+  padding: 7px 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFF;
+  background: rgba(255, 0, 239, 0.7);
+  margin-right: 10px;
+}
+
+.web{
+  padding: 7px 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFF;
+  background: #41D134;
+}
+
+.image{
+  border-radius: 10px;
+  width: 450px;
+  height: 310px;
+  @media screen and (max-width: 1750px){
+    width: 300px;
+    align-self: center;
+  }
+  @media screen and (max-width: 1400px){
+    width: 250px;
+    align-self: center;
+  }
+  @media (max-width: 1210px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 670px){
+    width: 100%;
+  }
+  img{
+    border-radius: 10px;
+    width: 450px;
+    height: 310px;
+    @media screen and (max-width: 1750px){
+      width: 300px;
+    }
+    @media screen and (max-width: 1400px){
+      width: 250px;
+    }
+    @media (max-width: 1210px) {
+      width: 450px;
+    }
+    @media screen and (max-width: 670px){
+      width: 100%;
+    }
+  }
+}
+
+.desc{
+  padding-top: 13px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #c4c4c4;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #5B5B5B;
+}
+
+.review{
+  margin: 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #5B5B5B;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+}
+
+.avatar{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin-right: 14px;
+  img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+  }
+}
+
+.name{
+  font-weight: 800;
+  font-size: 19.0193px;
+  line-height: 23px;
+  color: #4A4A4A;
+}

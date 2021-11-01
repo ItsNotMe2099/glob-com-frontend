@@ -203,6 +203,9 @@ useEffect(() => {
             </a>
           </Link>
           <div className={styles.right}>
+          <div className={styles.btns}>
+          <Button size='small' color='fill'>CONTACT US</Button>
+          </div>
           <div className={styles.btnsMobile}>
           <Button size='extraSmall' color='fill'><ContactUs/></Button>
           </div>

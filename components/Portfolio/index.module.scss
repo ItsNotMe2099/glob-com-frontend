@@ -3,7 +3,7 @@
 .root{
     padding-top: 118px;
     padding-bottom: 147px;
-    background: #24282C;
+    background: #171717;
     position: relative;
 }
 
@@ -12,7 +12,7 @@
     margin: 0 auto;
     @media (max-width: 1200px) {
         width: 100%;
-        padding: 0 18px;
+        padding: 0 15px;
 
 
     }
@@ -45,7 +45,8 @@
     margin-top: 50px;
     @media (max-width: 450px) {
         button{
-            font-size: 12px;
+            width: 100%;
+            font-size: 16px;
             padding: 25px 50px;
         }
     }

@@ -26,6 +26,9 @@
 .switches{
   display: flex;
   align-items: center;
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
 }
 
 .switchGreen{
@@ -37,7 +40,6 @@
   color: #67FF5A;
   background: rgba(13, 74, 8, 0.3);
   margin-right: 11px;
-  cursor: pointer;
 }
 
 .switchPink{
@@ -48,7 +50,6 @@
   line-height: 17px;
   color: #FF00EF;
   background: rgba(105, 10, 99, 0.3);
-  cursor: pointer;
 }
 
 .title{
@@ -57,6 +58,9 @@
   line-height: 44px;
   color: #fff;
   margin-top: 35px;
+  @media (max-width: 900px) {
+    text-align: center;
+  }
 }
 
 .desc{
@@ -65,6 +69,9 @@
   line-height: 175%;
   color: #929496;
   margin-top: 35px;
+  @media (max-width: 900px) {
+    text-align: center;
+  }
 }
 
 .left{
@@ -75,9 +82,20 @@
 
 .image{
   width: 100%;
-  background-size: cover;
+  display: flex;
   @media (max-width: 900px) {
-    height: 400px;
+    justify-content: center;
+  }
+  img{
+    @media (max-width: 1700px) {
+      width: 600px;
+    }
+    @media (max-width: 1280px) {
+      width: 500px;
+    }
+    @media (max-width: 520px) {
+      width: 300px;
+    }
   }
 }
 
@@ -85,11 +103,7 @@
   display: flex;
   align-items: center;
   margin-top: 35px;
-  div{
-    div{
-    &:first-of-type{
-      margin-right: 28px;
-    }
-  }
+  @media (max-width: 900px) {
+    justify-content: center;
   }
 }

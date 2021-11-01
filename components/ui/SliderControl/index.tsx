@@ -8,6 +8,7 @@ interface Props {
   onClick?: (e: any) => void
   light?: boolean
   position?: boolean
+  style?: any
 }
 
 
@@ -21,7 +22,7 @@ export default function SliderControl(props: Props) {
   }
 
   return (
-    <div className={cx(getClassName(), {[styles.position]: props.position})} onClick={props.onClick}>
+    <div className={cx(getClassName(), {[styles.position]: props.position})} onClick={props.onClick} style={props.style}>
       <div className={cx(styles.wrapper, {[styles.light]: props.light})}>{props.direction === 'next' ? <ArrowNext/> : <ArrowPrev/>}</div>
     </div>
   )

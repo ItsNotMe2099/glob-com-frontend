@@ -4,9 +4,10 @@ import styles from './index.module.scss'
 
 interface IItem {
   title: string
-  web?: string
-  app?: string
+  web?: boolean
+  app?: boolean
   desc: string
+  image: string
 }
 
 interface Props{
@@ -17,21 +18,17 @@ interface Props{
 
 export default function Slide(props: Props) {
 
-    const bool = props.item.web ? false : true
-
-    const [isApp, setIsApp] = useState(bool)
-
     return (
       <div className={styles.root}>
         <div className={styles.left}>
           <div className={styles.container}>
           <div className={styles.switches}>
             {props.item.web && 
-            <div className={styles.switchGreen} onClick={() => isApp ? setIsApp(false) : null}>
+            <div className={styles.switchGreen}>
              Website
             </div>}
             {props.item.app &&
-            <div className={styles.switchPink} onClick={() => !isApp ? setIsApp(true) : null}>
+            <div className={styles.switchPink}>
               APP
             </div>}
           </div>
@@ -42,12 +39,13 @@ export default function Slide(props: Props) {
             {props.item.desc}
           </div>
           <div className={styles.controls}>
-            <SliderControl direction='prev' onClick={props.onPrev}/>
+            <SliderControl direction='prev' onClick={props.onPrev} style={{marginRight: '28px'}}/>
             <SliderControl direction='next' onClick={props.onNext}/>
           </div>
           </div>
         </div>
-        <div className={styles.image} style={isApp ? {backgroundImage: `url(${props.item.app})`} : {backgroundImage: `url(${props.item.web})`}}>
+        <div className={styles.image}>
+          <img src={props.item.image} alt=''/>
         </div>
       </div>
     )

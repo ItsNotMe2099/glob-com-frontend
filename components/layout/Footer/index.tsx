@@ -7,6 +7,8 @@ import styles from './index.module.scss'
 import Logo from 'components/svg/Logo'
 import { CONTACTS } from 'types'
 import SubscribeSection from 'components/SubscribeSection'
+import Whatsapp from 'components/svg/Whatsapp'
+import Telegram from 'components/svg/Telegram'
 
 
 interface Props {
@@ -93,17 +95,17 @@ const information = [{label: 'App', link: '#'},
           <div className={styles.right}>
             <div className={styles.head}>Connect with us:</div>
             <div className={styles.social}>
-              <Link href={`${CONTACTS.instagram}`}>
-                <a className={styles.icon} target="blank"><Instagram/></a>
+              <Link href={`${CONTACTS.whatsapp}`}>
+                <a className={styles.icon} target="blank"><Whatsapp/></a>
               </Link>
-              <Link href={`${CONTACTS.facebook}`}>
-                <a className={styles.icon} target="blank"><Facebook/></a>
+              <Link href={`${CONTACTS.telegram}`}>
+                <a className={styles.icon} target="blank"><Telegram/></a>
               </Link>
             </div>
-            <div className={styles.subscribe}>
+            {/*<div className={styles.subscribe}>
               <div className={styles.head}>Subscribe</div>
               <SubscribeSection/>
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>

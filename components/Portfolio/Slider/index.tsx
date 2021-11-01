@@ -26,11 +26,11 @@ export default function PortfolioSlider(props: Props) {
     };
 
 const slides = [{title: 'StarMoon project', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum duis orci sit massa lacus. Aliquam fames nisi, neque, amet amet sed quam amet nisl. Non donec dapibus aliquam nibh. Odio malesuada ultrices.',
-web: '/img/Portfolio/web.png', app: '/img/Portfolio/app.png'},
+image: '/img/Portfolio/app.svg', web: true, app: true},
 {title: 'StarMoon project', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum duis orci sit massa lacus. Aliquam fames nisi, neque, amet amet sed quam amet nisl. Non donec dapibus aliquam nibh. Odio malesuada ultrices.',
-app: '/img/Portfolio/app.png'},
+image: '/img/Portfolio/app.svg', web: true, app: false},
 {title: 'StarMoon project', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum duis orci sit massa lacus. Aliquam fames nisi, neque, amet amet sed quam amet nisl. Non donec dapibus aliquam nibh. Odio malesuada ultrices.',
-web: '/img/Portfolio/web.png'}]
+image: '/img/Portfolio/web.svg', web: false, app: true}]
 
     return (
       <div className={styles.root}>

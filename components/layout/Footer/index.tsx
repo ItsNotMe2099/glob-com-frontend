@@ -92,7 +92,8 @@ const information = [{label: 'App', link: '#'},
               </Link>
             )}
           </div>
-          <div className={styles.right}>
+        </div>
+        <div className={styles.right}>
             <div className={styles.head}>Connect with us:</div>
             <div className={styles.social}>
               <Link href={`${CONTACTS.whatsapp}`}>
@@ -107,7 +108,6 @@ const information = [{label: 'App', link: '#'},
               <SubscribeSection/>
             </div>*/}
           </div>
-        </div>
       </div>
     </div>
     <div className={styles.copyright}>

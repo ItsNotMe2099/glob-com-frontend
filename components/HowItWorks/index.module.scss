@@ -2,7 +2,7 @@
 
 .root{
   background: #24282C;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 61px;
 }
 
@@ -31,15 +31,13 @@
 .titleBottom{
   font-weight: bold;
   font-size: 48px;
-  line-height: 59px;
   color: #fff;
   text-align: center;
   margin-top: 188px;
   @media (max-width: 600px) {
-      font-size: 38px;
-  }
-  @media (max-width: 450px) {
-      font-size: 28px;
+      font-size: 24px;
+      margin-bottom: 23px;
+      margin-top: 0;
   }
 }
 
@@ -64,12 +62,16 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  @media (max-width: 450px) {
-      button{
-          font-size: 12px;
-          padding: 25px 50px;
-      }
+  @media (max-width: 600px) {
+    margin-top: 0;
   }
+  @media (max-width: 450px) {
+    button{
+        width: 100%;
+        font-size: 16px;
+        padding: 25px 50px;
+    }
+}
 }
 
 .clouds2{
@@ -100,7 +102,7 @@
   display: flex;
   justify-content: space-between;
   float: left;
-  margin-top: 100px;
+  margin-top: 80px;
   position: relative;
   @media screen and (max-width: 1850px){
     float: none;
@@ -108,10 +110,24 @@
   @media screen and (max-width: 1250px){
     flex-direction: column;
   }
+  @media (max-width: 600px) {
+    margin-top: 20px;
+  }
   &:after {
     content: "";
     display: table;
     clear: both;
+  }
+}
+
+.contentTop{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 160px;
+  @media screen and (max-width: 1100px){
+    flex-direction: column;
+    margin-bottom: 60px;
   }
 }
 
@@ -147,9 +163,7 @@
 }
 
 .img{
-  @media screen and (min-width: 1251px){
-    display: none;
-  }
+  
 }
 
 .line2{

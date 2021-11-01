@@ -11,7 +11,15 @@ export default function HowItWorks(props: Props) {
     <div className={styles.root}>
       <div className={styles.container}>
         <div className={styles.title}>
-          HOW IT WORKS
+          HOW WE WORK
+        </div>
+        <div className={styles.contentTop}>
+          <Item large image='/img/HowItWorks/calendar-clock.svg' title='2 weeks iterations' desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'/>
+          <Item large image='/img/HowItWorks/lightbulb.svg' title='Flexible adjastments' desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'/>
+          <Item large image='/img/HowItWorks/pencil-ruler.svg' title='Detailed reports' desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'/>
+        </div>
+        <div className={styles.title}>
+          OUR WORK FLOW
         </div>
         <div className={styles.content}>
           <Item image='/img/HowItWorks/calendar.svg' title='Estimates' desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'/>

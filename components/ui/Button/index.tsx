@@ -5,7 +5,7 @@ interface Props {
   children?: React.ReactNode
   variant?: 'outlined' 
   color?: 'fill'
-  size?: 'small' | 'normal' | 'large'
+  size?: 'extraSmall' | 'small' | 'normal' | 'large'
   fluid?: boolean
   href?: string
   target?: string
@@ -23,6 +23,8 @@ export default function Button(props: Props) {
 
   const getClassName = () => {
     return {
+
+      [styles.sizeExtraSmall]: props.size === 'extraSmall',
       [styles.sizeSmall]: props.size === 'small',
       [styles.sizeNormal]: props.size === 'normal',
       [styles.sizeLarge]: props.size === 'large',

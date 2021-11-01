@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 import MenuMobile from 'components/svg/MenuMobile'
 import MenuMobileClose from 'components/svg/MenuMobileClose'
 import { useRouter } from 'next/router'
+import ContactUs from 'components/svg/ContactUs'
 
 interface Props {}
 
@@ -201,6 +202,10 @@ useEffect(() => {
             </div>
             </a>
           </Link>
+          <div className={styles.right}>
+          <div className={styles.btnsMobile}>
+          <Button size='extraSmall' color='fill'><ContactUs/></Button>
+          </div>
         {!isMenuMobileOpen && (
           <div
             className={styles.menuOpen}
@@ -214,11 +219,9 @@ useEffect(() => {
             <MenuMobileClose />
           </div>
         )}
+        </div>
          {isMenuMobileOpen && (
         <div className={styles.dropdownMobile}>
-          <div className={styles.btns}>
-            <Button size='small' color='fill'>CONTACT US</Button>
-          </div>
             <div className={styles.list}>
               {options.map((item) => (
                 <Link href={item.link}>

@@ -40,10 +40,18 @@
   }
 }
 
+.right{
+  display: flex;
+  align-items: center;
+}
+
 .title{
   font-size: 16px;
-  line-height: 29px;
   color: #FFFFFF;
+  font-weight: 600;
+  @media screen and (max-width: 350px){
+    font-size: 12px;
+  }
 }
 
 .item{
@@ -81,6 +89,12 @@
       }
     }
   }
+}
+
+.btnsMobile{
+  display: flex;
+  align-items: center;
+  margin-right: 17px;
 }
 
 .firstBtn{

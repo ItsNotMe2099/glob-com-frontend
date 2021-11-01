@@ -1,3 +1,4 @@
+import Clients from 'components/Clients'
 import HowItWorks from 'components/HowItWorks'
 import Layout from 'components/layout/Layout'
 import Packages from 'components/Packages'
@@ -13,7 +14,7 @@ export default function Home(props) {
       <Layout>
         <Portfolio/>
         <WhatWeAreDoing/>
-        <Reviews/>
+        <Clients/>
         <HowItWorks/>
       </Layout>
   )

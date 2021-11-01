@@ -1,0 +1,38 @@
+@import "scss/index";
+
+.root{
+  position: relative;
+  background-size: contain;
+  margin-top: -5px;
+  z-index: 2;
+  margin-top: 69px;
+  @media (max-width: 1200px) {
+    max-width: 512px;
+  }
+  @media screen and (max-width: 670px){
+    max-width: 400px;
+  }
+  @media screen and (max-width: 550px){
+    max-width: 300px;
+    margin-top: 50px;
+  }
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  @media (max-width: 1200px) {
+    width: 95%;
+  }
+}
+
+.less{
+  justify-content: center;
+  display: flex;
+}
+
+.slide{
+  margin-bottom: 60px;
+  display: flex !important;
+  justify-content: center;
+}

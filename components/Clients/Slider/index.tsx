@@ -2,8 +2,6 @@ import SliderControl from "components/ui/SliderControl";
 import React, { Component, useState } from "react";
 import Slider from "react-slick";
 import styles from './index.module.scss'
-import Slide from "./Slide";
-import cx from 'classnames'
 
 interface Props {
   slider?: any

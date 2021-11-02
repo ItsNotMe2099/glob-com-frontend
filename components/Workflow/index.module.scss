@@ -1,0 +1,100 @@
+@import "scss/index";
+
+.root{
+  background: #171717;
+  padding-top: 50px;
+  padding-bottom: 61px;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  @media (max-width: 1600px) {
+    width: 95%;
+}
+@media (max-width: 500px) {
+  width: 100%;
+}
+}
+
+.title{
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  color: #fff;
+  text-align: center;
+  @media (max-width: 600px) {
+      font-size: 38px;
+  }
+  @media (max-width: 450px) {
+      font-size: 28px;
+  }
+}
+
+.titleBottom{
+  font-weight: bold;
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+  margin-top: 188px;
+  @media (max-width: 600px) {
+      font-size: 24px;
+      margin-bottom: 23px;
+      margin-top: 0;
+  }
+}
+
+.bottom{
+  position: relative;
+  z-index: 1;
+  @media screen and (max-width: 1250px){
+    margin-top: 0;
+  }
+  @media (max-width: 600px) {
+      margin-top: 35px;
+  }
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  @media (max-width: 600px) {
+    margin-top: 0;
+  }
+  @media (max-width: 450px) {
+    button{
+        width: 100%;
+        font-size: 16px;
+        padding: 25px 50px;
+    }
+}
+}
+
+.clouds2{
+  overflow: hidden;
+  margin-top: -122px;
+  img{
+    margin-bottom: -5px;
+  }
+  @media screen and (max-width: 475px){
+      margin-top: -32px;
+    img{
+      width: 475px;
+    }
+  }
+  @media screen and (max-width: 375px){
+    img{
+      width: 375px;
+    }
+  }
+  @media screen and (max-width: 320px){
+    img{
+      width: 320px;
+    }
+  }
+}
+
+.content{
+  margin-top: 100px;
+}

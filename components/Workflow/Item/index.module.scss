@@ -1,0 +1,118 @@
+@import "scss/index";
+
+.root{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  @media screen and (max-width: 1200px){
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
+
+.even{
+  flex-direction: row-reverse;
+  @media screen and (max-width: 1200px){
+    flex-direction: column;
+  }
+}
+
+.image{
+  background: url('../../../public/img/nightsky.svg');
+  border-radius: 100%;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+  @media screen and (max-width: 1450px){
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.right{
+  
+}
+
+.title{
+  font-weight: bold;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  @media screen and (max-width: 700px){
+    font-size: 38px;
+    text-align: center;
+  }
+}
+
+.desc{
+  font-weight: 500;
+  font-size: 20px;
+  color: #B9B9B9;
+  max-width: 457px;
+  @media screen and (max-width: 700px){
+    text-align: center;
+  }
+}
+
+.clouds{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  @media screen and (max-width: 1450px){
+    img{
+      height: 500px;
+    }
+  }
+}
+
+.clouds2{
+  position: absolute;
+  bottom: -5px;
+  @media screen and (max-width: 1450px){
+    img{
+      height: 400px;
+    }
+  }
+}
+
+.clouds3{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  @media screen and (max-width: 1450px){
+    img{
+      height: 500px;
+    }
+  }
+}
+
+.clouds4{
+  position: absolute;
+  bottom: -5px;
+  @media screen and (max-width: 1450px){
+    img{
+      height: 400px;
+    }
+  }
+}
+
+.none{
+  display: none;
+}
+
+.user{
+  position: absolute;
+  top: 14%;
+  @media screen and (max-width: 1450px){
+    width: 400px;
+    height: 300px;
+  }
+  @media screen and (max-width: 350px){
+    width: 350px;
+  }
+}

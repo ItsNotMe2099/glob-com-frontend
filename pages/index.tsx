@@ -5,6 +5,7 @@ import Packages from 'components/Packages'
 import Portfolio from 'components/Portfolio'
 import Reviews from 'components/Reviews'
 import WhatWeAreDoing from 'components/WhatWeAreDoing'
+import Workflow from 'components/Workflow'
 import styles from './index.module.scss'
 
 
@@ -15,7 +16,7 @@ export default function Home(props) {
         <Portfolio/>
         <WhatWeAreDoing/>
         <Clients/>
-        <HowItWorks/>
+        <Workflow/>
       </Layout>
   )
 }

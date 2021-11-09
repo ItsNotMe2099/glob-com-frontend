@@ -27,6 +27,8 @@ const [isMenuMobileOpen, setMenuMobileOpen] = useState(false)
 
 const router = useRouter()
 
+console.log(router)
+
 const handleScroll = () => {
   if (window.pageYOffset > 0) {
     setIsScrolled(true)
@@ -64,7 +66,7 @@ useEffect(() => {
 
   return (
     <>
-    <div className={cx(styles.desktop, {[styles.scrolled]: isScrolled})}>
+    <div className={cx(styles.desktop, {[styles.notMain]: router.pathname !== '/'})}>
       <div className={styles.container}>
       <Link href="/">
         <a>

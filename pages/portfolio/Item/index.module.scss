@@ -1,0 +1,81 @@
+@import "scss/index";
+
+.root{
+  padding: 23px 21px 40px 22px;
+  max-width: 555px;
+  cursor: pointer;
+  justify-self: center;
+  &:hover{
+    background: #0071E3;
+  }
+  @media (max-width: 1830px) {
+    max-width: 400px;
+  }
+  @media (max-width: 450px) {
+    max-width: 300px;
+  }
+}
+
+.image{
+  max-width: 512px;
+  img{
+    width: 100%;
+  }
+  @media (max-width: 1830px) {
+    max-width: 350px;
+}
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+  justify-content: space-between;
+}
+
+.title{
+  font-weight: 800;
+  font-size: 19px;
+  color: #FFFFFF;
+}
+
+.types{
+  display: flex;
+  align-items: center;
+}
+
+.type{
+  padding: 5px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-radius: 30px;
+}
+
+.web{
+  background: #41D134;
+}
+
+.app{
+  background: rgba(255, 0, 239, 0.7);
+  margin-right: 10px;
+}
+
+.desc{
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.none{
+  display: none;
+}
+
+
+
+
+

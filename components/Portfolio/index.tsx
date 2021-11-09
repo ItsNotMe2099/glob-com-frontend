@@ -21,7 +21,7 @@ export default function Portfolio(props: Props) {
           <div className={styles.title}>
             WANT TO SEE MORE OUR PROJECTS?
           </div>
-          <Button size='normal' color='fill' classNameRoot={styles.btn}>VIEW ALL PROJECTS</Button>
+          <Button href='/portfolio' size='normal' color='fill' classNameRoot={styles.btn}>VIEW ALL PROJECTS</Button>
         </div>
       </div>
     </div>

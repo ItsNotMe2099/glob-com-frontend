@@ -1,0 +1,143 @@
+@import "scss/index";
+
+.root{
+    background: #171717;
+    padding-top: 63px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    @media (max-width: 1200px) {
+        width: 100%;
+        padding: 0 15px;
+    }
+  }
+
+.image{
+    @media (max-width: 1830px) {
+        max-width: 150px;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+.top{
+    padding-bottom: 64px;
+    border-bottom: 1px solid #909FAD;
+    @media (max-width: 750px) {
+        padding-bottom: 0;
+      }
+}
+
+.title{
+    font-weight: bold;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.switches{
+    display: flex;
+    justify-content: center;
+    @media (max-width: 750px) {
+      flex-direction: column;
+    }
+}
+
+.switch{
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #0071E3;
+    border-radius: 40px;
+    margin-right: 15px;
+    background: rgba(174, 174, 174, 0.2);
+    cursor: pointer;
+    @media (max-width: 750px) {
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+}
+
+.switchActive{
+    background: #0071E3;
+}
+
+.bottom{
+   padding-bottom: 50px;
+   margin-top: 140px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    @media (max-width: 450px) {
+        button{
+            width: 100%;
+            font-size: 16px;
+            padding: 25px 50px;
+        }
+    }
+}
+
+.titleBottom{
+    font-weight: bold;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    @media (max-width: 600px) {
+        font-size: 24px;
+        margin-bottom: 23px;
+        margin-top: 0;
+    }
+  }
+
+  .clouds2{
+    overflow: hidden;
+    margin-top: -122px;
+    img{
+      margin-bottom: -5px;
+    }
+    @media screen and (max-width: 475px){
+        margin-top: -32px;
+      img{
+        width: 475px;
+      }
+    }
+    @media screen and (max-width: 375px){
+      img{
+        width: 375px;
+      }
+    }
+    @media screen and (max-width: 320px){
+      img{
+        width: 320px;
+      }
+    }
+  }
+
+  .items{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 32px;
+      overflow-x: hidden !important;
+      @media (max-width: 950px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 750px) {
+        grid-template-columns: 1fr;
+    }
+  }
+
+  .item{
+      padding: 23px 21px 40px 22px;
+  }

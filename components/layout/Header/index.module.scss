@@ -1,16 +1,19 @@
 @import "scss/index";
 
 .desktop{
- height: 65px;
  display: flex;
  align-items: center;
- margin-top: 32px;
+ padding: 33px 0;
  justify-content: center;
  z-index: 100;
  width: 100%;
  @media screen and (max-width: 850px){
   display: none;
 }
+}
+
+.notMain{
+  background: #1E2224;
 }
 
 .container{

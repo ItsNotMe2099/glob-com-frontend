@@ -1,0 +1,53 @@
+@import "scss/index";
+
+.root{
+
+}
+
+.title{
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 44px;
+}
+
+.separator{
+    width: 285px;
+    height: 3px;
+    background: #717D87;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+    margin-bottom: 45px;
+}
+
+.messengers{
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 500px){
+        flex-direction: column;
+      }
+}
+
+.telegram{
+    margin-right: 22px;
+    @media screen and (max-width: 500px){
+        margin-right: 0;
+        margin-bottom: 22px;
+    }
+    button, a{
+        padding: 4px 42px;
+        background: #039BE5;
+    }
+}
+
+.whatsapp{
+    button, a{
+        padding: 4px 42px;
+        background: #4CAF50;
+    }
+}

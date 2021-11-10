@@ -1,0 +1,106 @@
+@import "scss/index";
+.root {
+  position: relative;
+  border-radius: 21px;
+  background: transparent;
+  padding: 157px 169px 55px 169px;
+  z-index: 5;
+  margin:  auto;
+  @media screen and (max-width: $sm-max){
+    width: 100% !important;
+  }
+  @media screen and (max-width: 600px){
+    position: fixed;
+    padding: 157px 18px 55px 18px;
+    border-radius: 0;
+    overflow-y: auto;
+  }
+}
+
+.rootFlex{
+  @media screen and (max-width: 600px){
+    display: flex;
+  }
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  button{
+    padding: 0;
+  }
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.rootNormal{
+  width: 800px;
+}
+.rootLarge{
+  width: 946px
+}
+.rootStream{
+  padding: 0px;
+  width: 1000px
+}
+
+.rootMedium{
+  width: 509px;
+}
+
+.title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 93%;
+  margin-top: 50px;
+}
+
+.loader {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.center, .body {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  text-align: center;
+}
+.frame{
+  overflow-y: scroll;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 3;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.scroll{
+}

@@ -10,6 +10,7 @@ import MenuMobile from 'components/svg/MenuMobile'
 import MenuMobileClose from 'components/svg/MenuMobileClose'
 import { useRouter } from 'next/router'
 import ContactUs from 'components/svg/ContactUs'
+import ModalContactUs from 'components/Modals/ModalContactUs'
 
 interface Props {}
 
@@ -24,10 +25,9 @@ export default function Header(props: Props) {
 
 const [isScrolled, setIsScrolled] = useState(false)
 const [isMenuMobileOpen, setMenuMobileOpen] = useState(false)
+const [isModalContactUsOpen, setIsModalContactUsOpen] = useState(false)
 
 const router = useRouter()
-
-console.log(router)
 
 const handleScroll = () => {
   if (window.pageYOffset > 0) {
@@ -190,9 +190,10 @@ useEffect(() => {
           </ButtonDotsWithOverflow>
           </div>
         <div className={styles.btns}>
-          <Button size='small' color='fill'>CONTACT US</Button>
+          <Button size='small' color='fill' onClick={() => setIsModalContactUsOpen(true)}>CONTACT US</Button>
         </div>
       </div>
+      <ModalContactUs singlePage isOpen={isModalContactUsOpen} onRequestClose={() => setIsModalContactUsOpen(false)}/>
     </div>
     <div className={styles.headerMobile}>
         <div className={styles.container}>
@@ -206,10 +207,10 @@ useEffect(() => {
           </Link>
           <div className={styles.right}>
           <div className={styles.btns}>
-          <Button size='small' color='fill'>CONTACT US</Button>
+          <Button size='small' color='fill' onClick={() => setIsModalContactUsOpen(true)}>CONTACT US</Button>
           </div>
           <div className={styles.btnsMobile}>
-          <Button size='extraSmall' color='fill'><ContactUs/></Button>
+          <Button size='extraSmall' color='fill' onClick={() => setIsModalContactUsOpen(true)}><ContactUs/></Button>
           </div>
         {!isMenuMobileOpen && (
           <div
@@ -240,6 +241,7 @@ useEffect(() => {
       )}
         </div>
         </div>
+        <ModalContactUs singlePage isOpen={isModalContactUsOpen} onRequestClose={() => setIsModalContactUsOpen(false)}/>
     </>
   )
 }

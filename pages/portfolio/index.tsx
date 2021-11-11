@@ -4,7 +4,7 @@ import styles from './index.module.scss'
 import cx from 'classnames'
 import Button from 'components/ui/Button'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import Item from './Item'
+import ItemPortfolioPage from 'components/ItemPortfolioPage'
 
 
 
@@ -28,38 +28,6 @@ export default function PortfolioPage(props) {
     )
   }
 
-  const renderType = (item) => {
-    switch(type) {
-      case 'ALL':
-        return(
-          <Item item={item}/>
-        )
-      case 'Applications':
-        return(
-          <>
-          {item.app && <Item item={item}/>}
-          </>
-        )
-      case 'Websites':
-        return(
-          <>
-          {item.web && <Item item={item}/>}
-          </>
-        )
-      case 'CRM':
-        return(
-          <>
-          {item.crm && <Item item={item}/>}
-          </>
-        )
-      case 'Advertising':
-        return(
-          <>
-          {item.ad && <Item item={item}/>}
-          </>
-        )
-    }
-  }
 
   const items = [
     {title: 'StarMoon project', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum duis orci sit massa lacus. Aliquam fames nisi, neque, amet amet sed quam amet nisl. Non donec dapibus aliquam nibh. Odio malesuada ultrices.',
@@ -75,6 +43,39 @@ export default function PortfolioPage(props) {
     {title: 'StarMoon project', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum duis orci sit massa lacus. Aliquam fames nisi, neque, amet amet sed quam amet nisl. Non donec dapibus aliquam nibh. Odio malesuada ultrices.',
     image: '/img/PortfolioPage/image.png', web: false, app: false, crm: true, ad: false}
   ]
+
+  const renderType = (item) => {
+    switch(type) {
+      case 'ALL':
+        return(
+          <ItemPortfolioPage item={item}/>
+        )
+      case 'Applications':
+        return(
+          <>
+          {item.app && <ItemPortfolioPage item={item}/>}
+          </>
+        )
+      case 'Websites':
+        return(
+          <>
+          {item.web && <ItemPortfolioPage item={item}/>}
+          </>
+        )
+      case 'CRM':
+        return(
+          <>
+          {item.crm && <ItemPortfolioPage item={item}/>}
+          </>
+        )
+      case 'Advertising':
+        return(
+          <>
+          {item.ad && <ItemPortfolioPage item={item}/>}
+          </>
+        )
+    }
+  }
 
   const handleScrollNext = () => {
 

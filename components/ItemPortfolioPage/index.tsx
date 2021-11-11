@@ -6,13 +6,13 @@ import Button from 'components/ui/Button'
 import InfiniteScroll from 'react-infinite-scroll-component'
 
 interface IItem {
-  title: string
+  title?: string
   web?: boolean
   app?: boolean
   crm?: boolean
   ad?: boolean
-  desc: string
-  image: string
+  desc?: string
+  image?: string
 }
 
 interface Props{
@@ -21,7 +21,7 @@ interface Props{
 
 
 
-export default function Item(props: Props) {
+export default function ItemPortfolioPage(props: Props) {
 
   return (
       <div className={styles.root}>

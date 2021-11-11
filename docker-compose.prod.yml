@@ -1,0 +1,41 @@
+version: '3'
+
+networks:
+  app:
+    driver: bridge
+  nginx-proxy:
+    external: true
+services:
+    app:
+        build:
+          context: .
+          dockerfile: docker/app/Dockerfile
+          args:
+            - ENV_FILE=.env.prod
+        image: ${APP_IMAGE}
+        container_name: arbi-hunter-front-app
+        restart: ${DK_RESTART}
+        networks:
+          - app
+    nginx:
+        build:
+          context: .
+          dockerfile: docker/nginx/Dockerfile
+          args:
+            - APP_IMAGE=${APP_IMAGE}
+        image: ${NGINX_IMAGE}
+        container_name: glob-com-front-nginx
+        restart: ${DK_RESTART}
+        networks:
+          - app
+          - nginx-proxy
+        depends_on:
+          - app
+        environment:
+          API_HOST: http://glob-com-api-new
+          ADMIN_HOST: http://glob-com-api-admin
+          VIRTUAL_HOST: glob-com.ru, www.glob-com.ru
+          LETSENCRYPT_HOST: glob-com.ru
+          LETSENCRYPT_EMAIL: sites.globcom@yandex.ru
+          VIRTUAL_PORT: 80
+
